@@ -2,17 +2,12 @@
 A simple CSS framework with just the strictly necessary (grid, reset, flexbox)
 
 
---------------------
+**DOCUMENTATION (only available in french for the moment)**
+====================
 
-DOCUMENTATION (only available in french for the moment)
 
---------------------
-
-/******
-
-ENCORE UN FRAMEWORK CSS ?
-
-******/
+**ENCORE UN FRAMEWORK CSS ?**
+---------------------
 
 Oui, mais ultra léger et ultra facile à prendre en main.
 
@@ -33,59 +28,53 @@ Conséquence : si vous appliquez une border ou un padding à un élément, ça n
 Par exemple vous avez 4 éléments alignés avec 25% de width et une border de 5px
 Normalement le 4ième élément et renvoyé à la ligne, hé bien là tout s'ajuste parfaitement ;)
 
-/******
+**LES CLASSES**
+---------------------
 
-LES CLASSES
+*.container* (largeur fixe prédéfinie qui s'adapte à la largeur de l'écran / exemple : écran de + de 1200px largeur à 1170px)
+*.container-fluid* (largeur 100%)
 
-******/
+-   englobe un ensemble de lignes (rows)
 
-.container (largeur fixe prédéfinie qui s'adapte à la largeur de l'écran / exemple : écran de + de 1200px largeur à 1170px)
-.container-fluid (largeur 100%)
+*.row*
 
--> englobe un ensemble de lignes (rows)
+-   englobe un ensemble d'item (items)
+-   peut s'étaler sur plusieurs lignes en fonction du nb d'items
 
-.row
+*.item*
 
--> englobe un ensemble d'item (items)
--> peut s'étaler sur plusieurs lignes en fonction du nb d'items
+-   possède une largeur en pourcentage selon la taille de l'écran et le nombre de colonne voulue dans la ligne
+-   voir doc bootstrap
+-   largeur d'écran dispo xxs xs sm md lg (on commence toujours par fixer la taille xxs puis on regarde si des classes de taille plus grand existent)
+-   de 1 à 12 colonnes
 
-.item
+*.item-content*
 
--> possède une largeur en pourcentage selon la taille de l'écran et le nombre de colonne voulue dans la ligne
--> voir doc bootstrap
--> largeur d'écran dispo xxs xs sm md lg (on commence toujours par fixer la taille xxs puis on regarde si des classes de taille plus grand existent)
--> de 1 à 12 colonnes
+-   parfois il sera intéressant de mettre un item avec une image de fond / couleur et un texte avec padding
+-   et que le tout soit aligné avec la grille
+-   pour cela placer un .item-content et ajoutez lui un fond et du contenu
 
-.item-content
+*.square + .square-content*
 
--> parfois il sera intéressant de mettre un item avec une image de fond / couleur et un texte avec padding
--> et que le tout soit aligné avec la grille
--> pour cela placer un .item-content et ajoutez lui un fond et du contenu
+-   si vous avez besoin de rendre une div facilement responsive appliquez lui cette classe
+-   puis si vous voulez ajouter du contenu ajouter une classe à l'intérieur de .square s'appelant .square-content
+-   attention mettre une div en square c'est bloquer sa hauteur, veillez donc à ce que votre texte ne dépasse pas
 
-.square + .square-content
+*.txt-center, .txt-left, .txt-right*
 
--> si vous avez besoin de rendre une div facilement responsive appliquez lui cette classe
--> puis si vous voulez ajouter du contenu ajouter une classe à l'intérieur de .square s'appelant .square-content
--> attention mettre une div en square c'est bloquer sa hauteur, veillez donc à ce que votre texte ne dépasse pas
+-   quelques classes pour appliquer rapidement un text-align à un élément
 
-.txt-center, .txt-left, .txt-right
+*a*
 
--> quelques classes pour appliquer rapidement un text-align à un élément
+-   on enlève simplement le soulignement et la couleur bleu
 
-a
+*.flex et .center*
 
--> on enlève simplement le soulignement et la couleur bleu
+-   envie de centrer parfaitement un élément dans une div (à la fois horizontalement et verticalement) ?
+-   appliquez la classe .flex à cette div puis .center à l'élément et le tour est joué
 
-.flex .center
-
--> envie de centrer parfaitement un élément dans une div (à la fois horizontalement et verticalement) ?
--> appliquez la classe .flex à cette div puis .center à l'élément et le tour est joué
-
-/******
-
-EXEMPLE DE STRUCTURE
-
-******/
+**EXEMPLE DE STRUCTURE**
+---------------------
 
 .container
     .row
