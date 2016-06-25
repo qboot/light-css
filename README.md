@@ -14,18 +14,21 @@ Oui, mais ultra léger et ultra facile à prendre en main.
 A quoi ça sert ?
 
 -   reset.css pour un css clean sur tout navigateur
--   base bootstrap pour la grille avec ajout d'une définition xxs en plus de xs sm md lg ->
--   initiation aux bonnes pratiques : la taille du texte est fixée selon celle du navigateur client (normalement 10px)
+-   base bootstrap pour la grille avec ajout d'une définition xxs en plus de xs sm md lg
+-   initiation aux bonnes pratiques : la taille du texte est fixée selon celle du navigateur client (normalement 10px) //
     fixer font-size pour chaque élément désiré grâce à la nouvelle unité "rem" ou 1 rem = 10px et 1.8 rem = 18px (en théorie, la force de l'unité est qu'elle s'adapte au client)
-    line-height à fixer soi-même selon la police (au moins sur les div et les p) à environ 170%
-    bannir le pixel
+    // line-height à fixer soi-même selon la police (au moins sur les div et les p) à environ 170%
+    // bannir le pixel
 -   qqs classes utiles et un code propre facilement personnalisable
 -   utilisation des dernières technologies CSS3 : flexbox, box-sizing, rem, etc...
 
 /!\ ASTUCE /!\
 La propriété box-sizing est appliquée à TOUS les éléments
+
 Conséquence : si vous appliquez une border ou un padding à un élément, ça ne change plus sa taille
+
 Par exemple vous avez 4 éléments alignés avec 25% de width et une border de 5px
+
 Normalement le 4ième élément et renvoyé à la ligne, hé bien là tout s'ajuste parfaitement ;)
 
 **LES CLASSES**
@@ -56,7 +59,7 @@ Normalement le 4ième élément et renvoyé à la ligne, hé bien là tout s'aju
 
 *.square + .square-content*
 
--   si vous avez besoin de rendre une div facilement responsive appliquez lui cette classe
+-   si vous avez besoin de rendre une div carrée et facilement responsive appliquez lui cette classe
 -   puis si vous voulez ajouter du contenu ajouter une classe à l'intérieur de .square s'appelant .square-content
 -   attention mettre une div en square c'est bloquer sa hauteur, veillez donc à ce que votre texte ne dépasse pas
 
